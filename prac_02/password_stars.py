@@ -5,6 +5,7 @@ def main():
     print (asterisk)
 
 def get_password():
+    """get password from user"""
     password = input("Enter a password: ")
     while len(password) < mini_length:
         print(f"Password need to be more than {mini_length} characters.")
