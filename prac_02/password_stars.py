@@ -13,6 +13,7 @@ def get_password():
     return password
 
 def print_asterisk(password):
+    """print asterisk with the length of the password."""
     return "*" * len(password)
 
 
