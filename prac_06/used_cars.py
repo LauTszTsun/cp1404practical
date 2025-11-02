@@ -16,5 +16,7 @@ def main():
 
     limo = Car(100)
     limo.add_fuel(20)
+    print(f"limo has left {limo.fuel} units of fuel.")
+    limo.drive(115)
 
 main()
