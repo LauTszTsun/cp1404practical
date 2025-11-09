@@ -33,13 +33,13 @@ def load_guitars(filename):
 
 
 def display_guitars(guitars):
-    """Display all guitars in a list."""
+    """Show all guitars in a list."""
     for guitar in guitars:
         print(guitar)
 
 
 def add_new_guitars(guitars):
-    """Prompt the user to add new guitars."""
+    """Ask the user to add new guitars."""
     print("\nAdd new guitars (press Enter to stop):")
     name = input("Name: ")
     while name != "":
