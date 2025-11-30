@@ -1,3 +1,8 @@
-# CP1404 Practicals
+#
+##
+Lau Tsz Tsun    
+- do not repeat the function
+- do the code bit by bit
+- try to reuse them
+https://github.com/LauTszTsun/cp1404practical.git
 
-Practical work for IT@JCU CP1404
