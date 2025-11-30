@@ -22,7 +22,7 @@ def is_long_word(word, length=5):
     >>> is_long_word("Python", 6)
     True
     """
-    return len(word) > length
+    return len(word) >= length
 
 
 def run_tests():
@@ -47,7 +47,10 @@ def run_tests():
     # using the value passed in or the default
     # You should test both of these
     car = Car(fuel=10)
+    assert car.fuel == 10
 
+    car = Car()
+    assert car.fuel == 0
 
 run_tests()
 
