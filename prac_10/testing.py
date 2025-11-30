@@ -13,6 +13,8 @@ def repeat_string(s, n):
 
 
 def is_long_word(word, length=5):
+    # TODO: 4. Fix the failing is_long_word function
+    # (Don't change the tests, change the function!)
     """
     Determine if the word is as long or longer than the length passed in
     >>> is_long_word("not")
@@ -52,21 +54,41 @@ def run_tests():
     car = Car()
     assert car.fuel == 0
 
+
+def test_phrases_form_sentence(phrase):
+    # TODO: 5. Write and test a function to format a phrase as a sentence,
+
+    # starting with a capital and ending with a single full stop.
+    # Important: start with a function header and just use pass as the body
+    # then add doctests for 3 tests:
+    #   'hello' -> 'Hello.'
+    #   'It is an ex parrot.' -> 'It is an ex parrot.'
+    # and one more that you decide is a useful test.
+    # Run your doctests and watch the tests fail.
+    # Then write the body of the function so that the tests pass.
+    """
+
+    Format a phrase as a sentence, starting with a capital and ending with
+    a single full stop.
+    >>> test_phrases_form_sentence('hello')
+    'Hello.'
+    >>> test_phrases_form_sentence('It is an ex parrot.')
+    'It is an ex parrot.'
+    >>> test_phrases_form_sentence('This subject rocks')
+    'This subject rocks.'
+    """
+
+    result = phrase.capitalize()
+
+    if result[-1] != '.':
+
+        result = f"{result}."
+    return result
+
+
 run_tests()
-doctest.testmod()
 # TODO: 3. Uncomment the following line and run the doctests
 # (PyCharm may see your >>> doctest comments and run doctests anyway.)
+doctest.testmod()
 
 
-# TODO: 4. Fix the failing is_long_word function
-# (Don't change the tests, change the function!)
-
-# TODO: 5. Write and test a function to format a phrase as a sentence,
-# starting with a capital and ending with a single full stop.
-# Important: start with a function header and just use pass as the body
-# then add doctests for 3 tests:
-#   'hello' -> 'Hello.'
-#   'It is an ex parrot.' -> 'It is an ex parrot.'
-# and one more that you decide is a useful test.
-# Run your doctests and watch the tests fail.
-# Then write the body of the function so that the tests pass.
